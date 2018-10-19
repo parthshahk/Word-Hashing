@@ -1,6 +1,12 @@
 <html>
     <head>
-        <?php include '../analytics.php'; ?>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101233231-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-101233231-2');
+        </script>
         <title>Word Hashing</title>
         <meta charset="utf-8">
         <meta name="description" content="A hash function usually returns a hexadecimal value. Here in Word Hashing the function returns a set of 4 English words instead of a seemingly arbitrary set of characters. These words are selected by the program from a huge database of words using an existing hashing algorithm.">
